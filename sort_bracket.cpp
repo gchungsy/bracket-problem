@@ -53,8 +53,10 @@ bool balance_brackets(string str)
 
     for ( size_t i = 0; i <= str.length() - 1; i++)
     {
-        if(str[i] == '(') counter += 1;
-        else if(str[i] == ')') counter -= 1;
+        if(str[i] == '(') 
+           counter += 1;
+        else if(str[i] == ')')
+           counter -= 1;
     }
     // Compare results
     if(counter != 0) return false;
