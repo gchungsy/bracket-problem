@@ -23,11 +23,6 @@ int main()
     string inputstr;
     string tmpstr;
 
-	if (!inputFile.is_open()) {
-		cout << "Failed to open file" << endl;
-		return 1;
-	}
-
     if(inputFile.is_open())
     {
         while(!inputFile.eof())
