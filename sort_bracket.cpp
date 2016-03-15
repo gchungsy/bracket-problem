@@ -2,7 +2,7 @@
  Author:      Gary Chung
  Date:        March 15, 2016
  Description: My solution to balance brackets problem, and more
-              For fun: if the number of brackets is even (balance) -> )))(((
+              For fun: if the number of left and right brackets is equal (balance) -> )))(((
               turn each pair of bracket into an egg like this -> ()()()
               after sorting them -> ((()))
 */
