@@ -2,7 +2,9 @@
  Author:      Gary Chung
  Date:        March 15, 2016
  Description: My solution to balance brackets problem, and more
-              For fun: if the number of left and right brackets is equal (balance) -> )))(((
+ 
+              For fun: 
+              Given any pattern, if the number of left and right brackets are equal (balance) -> )))(((
               turn each pair of bracket into an egg like this -> ()()()
               after sorting them -> ((()))
 */
@@ -109,5 +111,6 @@ void egg_generator(string str)
         str[i] = str[last - i];
         str[last - i] = tmp;
     }
+    // Show egg
     cout << "Success! " << str << endl << endl;
 }
