@@ -1,7 +1,7 @@
 /*
  Author:      Gary Chung
  Date:        March 15, 2016
- Description: My solutions to balance brackets problem, and more
+ Description: My solution to balance brackets problem, and more
               For fun: if the number of brackets is even (balance) -> )))(((
               turn each pair of bracket into an egg like this -> ()()()
               after sorting them -> ((()))
@@ -15,7 +15,6 @@ using namespace std;
 bool balance_brackets(string str);
 string sort_brackets(string str);
 void egg_generator(string str);
-void Swap(char* low, char* high);
 
 // program entry point
 int main()
@@ -49,19 +48,6 @@ int main()
         }
     }
     return 0;
-}
-
-void egg_generator(string str)
-{
-    int last = str.length() - 1;
-
-    for ( size_t i = 1; str[i] == '('; i += 2)
-    {
-        char tmp = str[i];
-        str[i] = str[last - i];
-        str[last - i] = tmp;
-    }
-    cout << "Success! " << str << endl << endl;
 }
 
 bool balance_brackets(string str)
@@ -116,4 +102,15 @@ string sort_brackets(string str)
     return str;
 }
 
+void egg_generator(string str)
+{
+    int last = str.length() - 1;
 
+    for ( size_t i = 1; str[i] == '('; i += 2)
+    {
+        char tmp = str[i];
+        str[i] = str[last - i];
+        str[last - i] = tmp;
+    }
+    cout << "Success! " << str << endl << endl;
+}
