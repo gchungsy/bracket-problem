@@ -21,7 +21,7 @@ void egg_generator(string str);
 // program entry point
 int main()
 {
-    ifstream inputFile("testcases.txt");
+    ifstream inputFile("input.txt");
     string inputstr;
     string tmpstr;
 
