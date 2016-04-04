@@ -1,12 +1,12 @@
 /*
  Author:      Gary Chung
  Date:        March 15, 2016
- Description: My solution to balance brackets problem, and more
+ Description: My solution to balance number of brackets problem, and more
  
               For fun: 
               Given any pattern, if the number of left and right brackets are equal (balance) -> )))(((
-              turn each pair of bracket into an egg like this -> ()()()
-              after sorting them -> ((()))
+              sort the brackets-> ((())) and turn them into an egg like this -> ()()()
+              
 */
 #include <iostream>
 #include <fstream>
